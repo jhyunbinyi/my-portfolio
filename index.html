@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jonathan Yi — Data Science student and software engineer based in San Diego.">
+  <meta name="description" content="Jonathan Yi — Data Science graduate and software engineer based in San Diego.">
   <title>Jonathan Yi</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,45 +11,63 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="page">
+  <header class="site-header">
     <nav class="nav" aria-label="Page sections">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-section="about">About</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#contact" data-section="contact">Contact</a>
     </nav>
+  </header>
 
-    <header class="hero">
-      <h1>Jonathan Yi</h1>
+  <main class="page">
+    <section class="hero">
       <div class="hero-row">
-        <p class="tagline">Data science student &amp; software engineer</p>
+        <div class="hero-text">
+          <h1 class="reveal" style="--delay: 0">Jonathan Yi</h1>
+          <p class="tagline reveal" style="--delay: 1">Data scientist &amp; software engineer</p>
+        </div>
         <img
-          class="hero-photo"
-          src="assets/photo.jpg"
+          class="photo reveal"
+          style="--delay: 2"
+          src="assets/IMG_4854.JPEG"
           alt="Photo of Jonathan Yi"
-          width="200"
-          height="200"
+          width="320"
+          height="320"
         >
       </div>
-    </header>
+    </section>
 
     <section class="block" id="about">
-      <h2>About</h2>
-      <p>
-        I'm studying Data Science at UC San Diego (graduating 2026) with a minor in
-        Cognitive Science. I enjoy building software that makes data useful — from
-        interactive visualizations to backend systems and machine learning tools.
-      </p>
-      <p>
-        I'm currently a Software Engineer Intern at OneFish AI,
-        working on loyalty apps, messaging platforms, and full-stack features with
-        Python, FastAPI, and SvelteKit.
-      </p>
+      <div class="about-row">
+        <img
+          class="photo about-photo reveal"
+          style="--delay: 0"
+          src="assets/IMG_1459.JPG"
+          alt="Photo of Jonathan Yi"
+          width="320"
+          height="320"
+        >
+        <div class="about-copy">
+          <h2 class="reveal" style="--delay: 1">About</h2>
+          <p class="reveal" style="--delay: 2">
+            I graduated from UC San Diego in 2026 with a B.S. in Data Science from the
+            Halıcıoğlu Data Science Institute and a minor in Cognitive Science. I enjoy
+            building software that makes data useful — from interactive visualizations to
+            backend systems and machine learning tools.
+          </p>
+          <p class="reveal" style="--delay: 3">
+            I'm currently a Software Engineer Intern at OneFish AI,
+            working on loyalty apps, messaging platforms, and full-stack features with
+            Python, FastAPI, and SvelteKit.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="block" id="projects">
-      <h2>Projects</h2>
+      <h2 class="reveal" style="--delay: 0">Projects</h2>
       <ul class="project-list">
-        <li>
+        <li class="reveal" style="--delay: 1">
           <h3>Misinformation Classification</h3>
           <p>
             A multi-agent system that assesses news article factuality across factors
@@ -57,7 +75,7 @@
             Development Kit, with web search grounding for explainable outputs.
           </p>
         </li>
-        <li>
+        <li class="reveal" style="--delay: 2">
           <h3>NBA Player Comparison — Edwards vs. Jordan</h3>
           <p>
             An interactive visualization comparing Anthony Edwards and Michael Jordan
@@ -67,25 +85,25 @@
       </ul>
     </section>
 
-    <section class="block">
-      <h2>Skills</h2>
+    <section class="block" id="skills">
+      <h2 class="reveal" style="--delay: 0">Skills</h2>
       <ul class="skills">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>SvelteKit</li>
-        <li>FastAPI</li>
-        <li>SQL</li>
-        <li>pandas</li>
-        <li>Docker</li>
-        <li>Git</li>
-        <li>D3</li>
+        <li class="reveal" style="--delay: 1">Python</li>
+        <li class="reveal" style="--delay: 2">JavaScript</li>
+        <li class="reveal" style="--delay: 3">TypeScript</li>
+        <li class="reveal" style="--delay: 4">SvelteKit</li>
+        <li class="reveal" style="--delay: 5">FastAPI</li>
+        <li class="reveal" style="--delay: 6">SQL</li>
+        <li class="reveal" style="--delay: 7">pandas</li>
+        <li class="reveal" style="--delay: 8">Docker</li>
+        <li class="reveal" style="--delay: 9">Git</li>
+        <li class="reveal" style="--delay: 10">D3</li>
       </ul>
     </section>
 
     <section class="block" id="contact">
-      <h2>Contact</h2>
-      <p class="contact">
+      <h2 class="reveal" style="--delay: 0">Contact</h2>
+      <p class="contact reveal" style="--delay: 1">
         <a href="mailto:jhyunbinyi@gmail.com">jhyunbinyi@gmail.com</a>
         <span class="sep">·</span>
         <a href="https://github.com/jhyunbinyi" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -94,7 +112,7 @@
       </p>
     </section>
 
-    <footer>
+    <footer class="reveal">
       <p>&copy; <span id="year"></span> Jonathan Yi</p>
     </footer>
   </main>
