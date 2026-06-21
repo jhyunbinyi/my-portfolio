@@ -183,6 +183,7 @@ a:hover {
 .hero .photo {
   width: 320px;
   height: 320px;
+  object-position: 58% center;
 }
 
 /* About */
